@@ -2,7 +2,7 @@
 
 * Студент: [Любовь Богза](https://up.htmlacademy.ru/htmlcss/39/user/2422439).
 * Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
-
+* Сайт: [Мой проект «Седона»](https://bogzalubov.github.io/2422439-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
