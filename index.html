@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="logo" href="index.html">
-          <img class="logo-image" src="images/city-logo.svg" width="140" height="70" alt="Логотип города Седона.">
+          <img class="logo-image" src="images/city-logo.svg" width="138" height="64" alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -36,10 +37,10 @@
             </a>
           </li>
         </ul>
+        <a class="header-button button button-primary" href="#">Хочу сюда!</a>
       </nav>
-      <a class="header-button button button-primary" href="#">Хочу сюда!</a>
     </header>
-    <main class="main-index" data-test="main">
+    <main class="main-index main-container" data-test="main">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Седона - небольшой городок в Аризоне.</h1>
         <img class="hero-img" src="images/hero-title.svg" width="458" height="352" lang="en" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
@@ -53,8 +54,8 @@
             <div class="advantages-card color-primary">
               <h3 class="advantages-card-title title-h3">Настоящий городок</h3>
               <p class="advantages-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="advantages-img" src="images/genuine-city.jpg" width="800" height="385" alt="Дом на фоне гор">
             </div>
+            <img class="advantages-img" src="images/genuine-city.jpg" width="800" height="385" alt="Дом на фоне гор">
           </li>
           <li class="advantages-item">
             <div class="advantages-card color-first">
@@ -78,8 +79,8 @@
             <div class="advantages-card color-primary">
               <h3 class="advantages-card-title title-h3">Там есть мост дьявола</h3>
               <p class="advantages-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img class="advantages-img" src="images/devil-bridge.jpg" width="800" height="385" alt="Мост дьявола">
             </div>
+            <img class="advantages-img" src="images/devil-bridge.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
       </section>
@@ -144,5 +145,6 @@
         <span class="visually-hidden">Логотип html academy</span>
       </a>
     </footer>
+    </div>
   </body>
 </html>
