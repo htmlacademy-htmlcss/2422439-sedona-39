@@ -78,8 +78,9 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 50px;
   border-radius: 4px;
+  padding: 8px 10px;
+  width: 140px;
   height: 36px;
 }
 
@@ -217,6 +218,7 @@ img {
 .title-h3 {
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 
 /* Advantages */
@@ -352,6 +354,11 @@ img {
   padding-bottom: 104px;
 }
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
@@ -359,6 +366,7 @@ img {
   text-align: center;
   width: 232px;
   height: 52px;
+  border-radius: 0px 4px 4px 0px;
 }
 
 .subscribe-index {
@@ -378,6 +386,8 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  width: 452px;
+  height: 52px;
 }
 
 /* Footer */
@@ -467,6 +477,7 @@ img {
 .filter-list {
   font-size: 18px;
   line-height: 23px;
+  list-style-type: none;
 }
 
 .filter-range-control input {
@@ -490,29 +501,48 @@ img {
 
 .catalog-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   list-style-type: none;
   padding: 0;
   margin-bottom: 80px;
 }
 
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  row-gap: 16px;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+/*.product-card-image {
+  grid-column: span ;
+}*/
+
 .product-card-link {
   text-decoration: none;
   color: #000000;
+  grid-column: 1/-1;
 }
 
 .product-card-text {
   font-size: inherit;
   line-height: inherit;
+  margin: 0;
 }
 
 .product-card-rating {
   color: inherit;
+  background-color: #f2f2f2;
+  margin: 0;
 }
 
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   gap: 8px;
   margin-bottom: 60px;
 }
