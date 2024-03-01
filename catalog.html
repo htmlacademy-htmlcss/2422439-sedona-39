@@ -11,6 +11,7 @@
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
+       <div class="container">
         <nav class="navigation">
           <a class="logo" href="index.html">
             <img class="logo-image" src="images/city-logo.svg" width="140" height="70" alt="Логотип города Седона.">
@@ -43,9 +44,11 @@
             </li>
           </ul>
         </nav>
+       </div>
       </header>
     <main class="main-inner" data-test="main">
      <div class="sorting-container">
+      <div class="container">
        <h1 class="catalog-inner-title">Гостиницы Седоны</h1>
        <section class="catalog-inner-header" data-test="filter">
         <ol class="breadcrumbs">
@@ -120,8 +123,10 @@
           </div>
         </form>
        </section>
+       </div>
       </div>
       <section class="catalog" data-test="catalog">
+       <div class="container">
         <header class="catalog-header">
           <h2 class="catalog-title title-h2">Найдено гостиниц: 38</h2>
           <select class="select-control" name="sorting" aria-label="Сортировка">
@@ -232,6 +237,7 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+       </div>
       </section>
       <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title title-h2">Подпишитесь на рассылку</h2>
@@ -245,31 +251,32 @@
       </section>
     </main>
     <footer class="page-footer" data-test="footer">
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden" lang="en">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <address class="contacts">
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-      <a class="copyright" href="https://htmlacademy.ru/">
-        <span class="visually-hidden">Логотип html academy</span>
-      </a>
+      <div class="container">
+       <ul class="social-list">
+         <li class="social-item">
+           <a class="social-link" href="https://vk.com/htmlacademy">
+             <span class="visually-hidden">ВКонтакте.</span>
+           </a>
+         </li>
+         <li class="social-item">
+           <a class="social-link" href="https://t.me/htmlacademy">
+             <span class="visually-hidden">Телеграм.</span>
+           </a>
+         </li>
+         <li class="social-item">
+           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+             <span class="visually-hidden" lang="en">Youtube.</span>
+           </a>
+         </li>
+       </ul>
+       <address class="contacts">
+         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+       </address>
+       <a class="copyright" href="https://htmlacademy.ru/">
+         <span class="visually-hidden">Логотип html academy</span>
+       </a>
+      </div>
+     </footer>
     </div>
-    </footer>
   </body>
-
 </html>

@@ -58,6 +58,11 @@ body {
   min-height: 100%;
 }
 
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -73,6 +78,9 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 8px 50px;
+  border-radius: 4px;
+  height: 36px;
 }
 
 .button-primary {
@@ -87,14 +95,16 @@ img {
   background-color: #7DB54F;
 }
 
+.button-transparent {
+  background-color: transparent;
+}
+
 .search-hotels-button {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-}
-
-.button-transparent {
-  background-color: transparent;
+  width: 376px;
+  height: 52px;
 }
 
 /* Header */
@@ -102,13 +112,11 @@ img {
 .page-header {
   color: #000000;
   background-color: #ffffff;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 .logo {
   z-index: 2;
-  margin-bottom: -8px;
+  margin-bottom: -6px;
 }
 
 .navigation {
@@ -163,6 +171,7 @@ img {
 .header-button {
   width: 160px;
   height: 36px;
+  margin-left: 20px;
   padding: 8px 34px;
 }
 
@@ -201,6 +210,7 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -210,11 +220,20 @@ img {
 }
 
 /* Advantages */
+.advantages {
+  margin-bottom: 64px;
+}
+
+.advantages-title {
+  margin-bottom: 25px;
+}
 
 .advantages-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 90px;
 }
 
 .advantages-list {
@@ -228,7 +247,7 @@ img {
 }
 
 .advantages-card {
-  padding: 102px 85px;
+  padding: 102px 84px;
 }
 
 .advantages-item {
@@ -253,6 +272,14 @@ img {
   margin: 0;
 }
 
+.advantages-revers {
+  flex-direction: row-reverse;
+}
+
+.color-second {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .color-primary {
   color: #ffffff;
   background-color: rgba(130, 179, 211, 1);
@@ -262,29 +289,34 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-revers {
-  flex-direction: row-reverse;
-}
-
-.color-second {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
 .color-base {
   background-color: #ffffff;
 }
 
 /* Infrastructure */
 
+.infrastructure {
+  margin-bottom: 96px;
+}
+
+.infrastructure-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.infrastructure-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .infrastructure-lead-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 64px;
 }
 
 .infrastructure-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -301,11 +333,15 @@ img {
 
 .search {
   text-align: center;
+  margin-bottom: 96px;
 }
 
-.search-text {
+.search-text,
+.subscribe-text {
   font-size: 22px;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
 /* Subscribe */
@@ -316,16 +352,13 @@ img {
   padding-bottom: 104px;
 }
 
-.subscribe-text {
-  font-size: 22px;
-  line-height: 26px;
-}
-
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  width: 232px;
+  height: 52px;
 }
 
 .subscribe-index {
@@ -355,7 +388,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px;
 }
 
 .social-list {
@@ -393,13 +425,16 @@ img {
   color: #ffffff;
   background-color: #9db9cc;
   background-repeat: no-repeat;
+  padding-top: 35px;
+  margin-bottom: 50px;
 }
 
 .catalog-inner-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
@@ -418,10 +453,10 @@ img {
   display: flex;
 }
 
-.button-wrapper {
+/*.button-wrapper {
   display: flex;
   flex-direction: column;
-}
+}*/
 
 .filter-title {
   font-size: 20px;
@@ -450,12 +485,15 @@ img {
 .catalog-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .catalog-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
   list-style-type: none;
+  padding: 0;
+  margin-bottom: 80px;
 }
 
 .product-card-link {
@@ -474,9 +512,9 @@ img {
 
 .pagination {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
