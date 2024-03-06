@@ -96,6 +96,19 @@ img {
   background-color: #82B3D3;
 }
 
+.button-secondary:hover {
+  background-color: #68A2CA;
+}
+
+.button-secondary:focus {
+  background-color: #68A2CA;
+}
+
+.button-secondary:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: #68A2CA;
+}
+
 .button-selected {
   color: #ffffff;
   background-color: #7DB54F;
@@ -114,6 +127,13 @@ img {
 
 .search-hotels-button {
   min-width: 376px;
+}
+
+.button-icon {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  padding: 14px 12px;
 }
 
 /* Header */
@@ -154,11 +174,15 @@ img {
 }
 
 .navigation-actions-link {
+  display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+  position: relative;
+  padding: 22px 12px;
+  min-width: 20px;
 }
 
 .navigation-actions {
@@ -171,10 +195,23 @@ img {
 }
 
 .actions-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
+  color: #ffffff;
   background-color: #7DB54F;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 3px;
+  top: 12px;
+  margin: auto;
+
 }
 
 .header-button {
@@ -334,12 +371,32 @@ img {
 }
 
 .infrastructure-title {
+  padding-top: 102px;
   margin-bottom: 30px;
 }
 
 .infrastructure-item {
   padding: 81px 85px;
   width: 400px;
+}
+
+.infrastructure-item:nth-child(1) .infrastructure-title {
+  background-image: url(../images/icons/hotels-large-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+}
+
+.infrastructure-item:nth-child(2) .infrastructure-title {
+  background-image: url(../images/icons/burger-large-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.infrastructure-item:nth-child(3) .infrastructure-title {
+  background-image: url(../images/icons/gift-large-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .infrastructure-item p {
@@ -417,11 +474,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .social-list {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-link {
@@ -528,10 +589,19 @@ img {
   margin-bottom: 80px;
 }
 
-.product-card {
+/* .product-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 16px;
+  column-gap: 20px;
+  padding: 20px;
+} */
+
+.catalog-item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: auto 1fr;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
@@ -560,6 +630,10 @@ img {
   color: inherit;
   background-color: #f2f2f2;
   margin: 0;
+}
+
+.product-card-button {
+  cursor: pointer;
 }
 
 .pagination {
