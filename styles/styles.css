@@ -647,6 +647,7 @@ img {
   background-color: #9db9cc;
   background-repeat: no-repeat;
   padding-top: 35px;
+  padding-bottom: 70px;
   margin-bottom: 50px;
 }
 
@@ -690,20 +691,34 @@ img {
 
 .filter {
   display: flex;
+  gap: 70px;
 }
 
-/*.button-wrapper {
+.filter-group {
+  margin: 0;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.button-wrapper {
   display: flex;
   flex-direction: column;
-}*/
+  padding-top: 56px;
+}
 
 .filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .filter-list {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 23px;
   list-style-type: none;
@@ -714,6 +729,63 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+}
+
+/* .form-group-range {
+  margin-right: 71px;
+  margin-left: 85px;
+} */
+
+.form-range-label {
+  position: relative;
+}
+
+.range-input {
+  /* -moz-appearance: textfield; */
+  position: relative;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  padding: 10px 40px 10px 20px;
+  width: 143px;
+  min-height: 48px;
+  color: #000000;
+}
+
+.range-input-from {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-to {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input-from-placeholder {
+  position: absolute;
+  top: 50%;
+  opacity: 30%;
+  padding: 0 20px;
+}
+
+.hotel-filters-bar-control {
+  position: relative;
+  width: 287px;
+  height: 20px;
+}
+
+.hotel-filters-bar-control::before,
+.hotel-filters-bar-control::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  content: "";
 }
 
 .select-control {

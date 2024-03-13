@@ -114,14 +114,30 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-group">
+          <fieldset class="filter-group form-group-range">
             <legend class="filter-title">Стоимость, ₽:</legend>
-            <label class="filter-range-control"><span>От</span>
-              <input type="text" name="min-interval" value="0">
-            </label>
-            <label class="filter-range-control"><span>До</span>
-              <input type="text" name="max-interval" value="9000">
-            </label>
+            <div class="form-range">
+              <div class="range-wrapper-inputs">
+                <label class="filter-range-control">
+                  <span class="visually-hidden">От</span>
+                  <input class="range-input input-element range-input-from" type="text" name="min-interval" value="0">
+                  <span class="range-input-from-placeholder" tabindex="-1">от</span>
+                </label>
+                <label class="filter-range-control">
+                  <span class="visually-hidden">До</span>
+                  <input class="range-input input-element range-input-to" type="text" name="max-interval" value="9000">
+                  <span class="range-input-from-placeholder" tabindex="-1">до</span>
+                </label>
+              </div>
+              <div class="hotel-filters-bar-control">
+                <button class="filters-scale-toggle filters-scale-min-control" type="button">
+                  <span class="visually-hidden">Уменьшить цену.</span>
+                </button>
+                <button class="filters-scale-toggle filters-scale-max-control" type="button">
+                  <span class="visually-hidden">Увеличить цену.</span>
+                </button>
+              </div>
+            </div>
           </fieldset>
           <div class="button-wrapper">
             <button class="filter-button button button-secondary" type="submit">Применить</button>
