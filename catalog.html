@@ -73,19 +73,22 @@
             <ul class="filter-list">
               <li class="filter-item">
                 <label class="checkbox">
-                  <input class="checkbox-input" type="checkbox" name="Бассейн" checked>
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="Бассейн" checked>
+                  <span class="checkbox-mark checkbox-mark-input"></span>
                   <span class="checkbox-label">Бассейн</span>
                 </label>
               </li>
               <li class="filter-item">
                 <label class="checkbox">
-                  <input class="checkbox-input" type="checkbox" name="Парковка" checked>
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="Парковка" checked>
+                  <span class="checkbox-mark checkbox-mark-input"></span>
                   <span class="checkbox-label">Парковка</span>
                 </label>
               </li>
               <li class="filter-item">
-                <label class="checkbox">
-                  <input class="checkbox-input" type="checkbox" name="Wi-Fi">
+                <label class="checkbox ">
+                  <input class="checkbox-input visually-hidden" type="checkbox" name="Wi-Fi">
+                  <span class="checkbox-mark checkbox-mark-input"></span>
                   <span class="checkbox-label" lang="en">Wi-Fi</span>
                 </label>
               </li>
@@ -96,19 +99,22 @@
             <ul class="filter-list">
               <li class="filter-item">
                 <label class="radio">
-                  <input class="radio-input" type="radio" name="hotel-type" value="hotel" checked>
+                  <input class="radio-input visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
+                  <span class="radio-mark radio-mark-input"></span>
                   <span class="radio-label">Гостиница</span>
                 </label>
               </li>
               <li class="filter-item">
                 <label class="radio">
-                  <input class="radio-input" type="radio" name="hotel-type" value="motel">
+                  <input class="radio-input visually-hidden" type="radio" name="hotel-type" value="motel">
+                  <span class="radio-mark radio-mark-input"></span>
                   <span class="radio-label">Мотель</span>
                 </label>
               </li>
               <li class="filter-item">
                 <label class="radio">
-                  <input class="radio-input" type="radio" name="hotel-type" value="apartments">
+                  <input class="radio-input visually-hidden" type="radio" name="hotel-type" value="apartments">
+                  <span class="radio-mark radio-mark-input"></span>
                   <span class="radio-label">Апартаменты</span>
                 </label>
               </li>
@@ -120,20 +126,20 @@
               <div class="range-wrapper-inputs">
                 <label class="filter-range-control">
                   <span class="visually-hidden">От</span>
-                  <input class="range-input input-element range-input-from" type="text" name="min-interval" value="0">
+                  <input class="range-input input-element range-input-from" type="number" name="min-interval" value="0">
                   <span class="range-input-from-placeholder" tabindex="-1">от</span>
                 </label>
                 <label class="filter-range-control">
                   <span class="visually-hidden">До</span>
-                  <input class="range-input input-element range-input-to" type="text" name="max-interval" value="9000">
+                  <input class="range-input input-element range-input-to" type="number" name="max-interval" value="9000">
                   <span class="range-input-from-placeholder" tabindex="-1">до</span>
                 </label>
               </div>
               <div class="hotel-filters-bar-control">
-                <button class="filters-scale-toggle filters-scale-min-control" type="button">
+                <button class="filters-toggle filters-min-control" type="button">
                   <span class="visually-hidden">Уменьшить цену.</span>
                 </button>
-                <button class="filters-scale-toggle filters-scale-max-control" type="button">
+                <button class="filters-toggle filters-max-control" type="button">
                   <span class="visually-hidden">Увеличить цену.</span>
                 </button>
               </div>
@@ -141,7 +147,7 @@
           </fieldset>
           <div class="button-wrapper">
             <button class="filter-button button button-secondary" type="submit">Применить</button>
-            <button class="button button-transparent" type="reset">Сбросить</button>
+            <button class="filter-button button button-transparent" type="reset">Сбросить</button>
           </div>
         </form>
        </section>
@@ -151,11 +157,12 @@
        <div class="container">
         <header class="catalog-header">
           <h2 class="catalog-title title-h2">Найдено гостиниц: 38</h2>
+          <div class="catalog-settings">
           <select class="select-control" name="sorting" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
           </select>
-          <div>
             <a class="button-icon button catalog-style-current" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
               <span class="visually-hidden">Маленькие карточки.</span>
@@ -177,7 +184,7 @@
                 <img class="product-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
                   alt="Ущелье горы на фоне звездного неба.">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" tabindex="-1" href="#">
                 <h3 class="product-card-title title-h3" lang="en">Amara Resort & Spa</h3>
               </a>
               <p class="product-card-text">Гостиница</p>
@@ -196,7 +203,7 @@
                 <img class="product-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
                   alt="Горы на рассвете.">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" tabindex="-1" href="#">
                 <h3 class="product-card-title title-h3" lang="en">Villas at Poco Diablo</h3>
               </a>
               <p class="product-card-text">Гостиница</p>
@@ -215,7 +222,7 @@
                 <img class="product-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
                   alt="Горы на фоне неба.">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" tabindex="-1" href="#">
                 <h3 class="product-card-title title-h3" lang="en">Desert Quail Inn</h3>
               </a>
               <p class="product-card-text">Гостиница</p>
@@ -234,7 +241,7 @@
                 <img class="product-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
                   alt="Горы на фоне звездного неба.">
               </a>
-              <a class="product-card-link" href="#">
+              <a class="product-card-link" tabindex="-1" href="#">
                 <h3 class="product-card-title title-h3" lang="en">GreenTree Inn</h3>
               </a>
               <p class="product-card-text">Гостиница</p>
@@ -250,7 +257,7 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="#">1</a>
+            <p class="pagination-link pagination-current">1</p>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>

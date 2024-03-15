@@ -60,7 +60,7 @@
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-wide color-primary">
             <div class="advantages-card">
-              <h3 class="advantages-card-title title-h3">Настоящий городок</h3>
+              <h3 class="advantages-card-title title-h3 advantages-card-decorated">Настоящий городок</h3>
               <p class="advantages-card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="advantages-img" src="images/genuine-city.jpg" width="800" height="385" alt="Дом на фоне гор">
@@ -85,7 +85,7 @@
           </li>
           <li class="advantages-item advantages-item-wide color-primary advantages-revers">
             <div class="advantages-card">
-              <h3 class="advantages-card-title title-h3">Там есть мост дьявола</h3>
+              <h3 class="advantages-card-title title-h3 advantages-card-decorated">Там есть мост дьявола</h3>
               <p class="advantages-card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <img class="advantages-img" src="images/devil-bridge.jpg" width="800" height="385" alt="Мост дьявола">
@@ -99,17 +99,23 @@
           <p class="infrastructure-lead-text">Опытный персонал и качественное обслуживание!</p>
         </header>
         <ul class="infrastructure-list">
-          <li class="infrastructure-item color-first ">
-            <h3 class="infrastructure-title title-h3 infrastructure-home infrastructure-title-icon">Жильё</h3>
-            <p class="infrastructure-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <li class="infrastructure-item color-first">
+            <div class="infrastructure-home infrastructure-title-icon">
+              <h3 class="infrastructure-title title-h3">Жильё</h3>
+              <p class="infrastructure-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
           </li>
           <li class="infrastructure-item color-base">
-            <h3 class="infrastructure-title title-h3 infrastructure-food infrastructure-title-icon">Еда</h3>
-            <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <div class="infrastructure-food infrastructure-title-icon">
+              <h3 class="infrastructure-title title-h3">Еда</h3>
+              <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </div>
           </li>
           <li class="infrastructure-item color-first">
-            <h3 class="infrastructure-title title-h3 infrastructure-souvenir infrastructure-title-icon">Сувениры</h3>
-            <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!</p>
+            <div class="infrastructure-souvenir infrastructure-title-icon">
+              <h3 class="infrastructure-title title-h3">Сувениры</h3>
+              <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -161,6 +167,79 @@
       </a>
      </div>
     </footer>
+    <div class="modal-container modal-container-closed">
+      <div class="modal">
+        <div class="modal-search">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title title-h2">Поиск гостиницы в Седоне</h2>
+          <form class="form modal-form" id="search-hotels-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-container">
+              <label class="modal-label-input-title label-size" for="search-hotels-form-arrival-date">Дата заезда:</label>
+              <div class="arrival-date-container">
+                <input class="modal-label-input modal-input-large field" type="text" value="27 апреля 2020" name="search-hotels-form-arrival-date" id="search-hotels-form-arrival-date" placeholder="Укажите дату" required>
+                <button class="calendar-button calendar-button-arrival" type="button">
+                  <span class="visually-hidden">Выбрать дату заезда в календаре</span>
+                </button>
+                <p class="message message-error">Мы не можем отправить вас в прошлое.</p>
+              </div>
+            </div>
+            <div class="form-container">
+              <label class="modal-label-input-title label-size" for="search-hotels-form-departure-date">Дата выезда:</label>
+              <div class="departure-date-container">
+                <input class="modal-label-input modal-input-large field" type="text" value="1 сентября 2023" name="search-hotels-form-departure-date" id="search-hotels-form-departure-date" placeholder="Укажите дату" required>
+                <button class="calendar-button calendar-button-arrival" type="button">
+                <span class="visually-hidden">Выбрать дату заезда в календаре</span>
+                </button>
+                <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </div>
+            <div class="adults-container">
+              <label class="modal-label-input-title" for="search-hotels-form-adults">Взрослые:</label>
+              <div class="input-form-container">
+                <button class="plus-minus-button minus-button" type="button">
+                  <span class="visually-hidden">Увеличить счетчик взрослых</span>
+                </button>
+                <input class="form-input-guest" type="number" value="2" max="99" min="1" name="search-hotels-form-adults" id="search-hotels-form-adults" required>
+                <button class="plus-minus-button plus-button" type="button">
+                  <span class="visually-hidden">Уменьшить счетчик взрослых людей</span>
+                </button>
+              </div>
+            </div>
+            <div class="children-container">
+              <div class="children-container-form">
+                <label class="modal-label-input-title" for="search-hotels-form-children">Дети:</label>
+              <div class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <span class="visually-hidden">Подробная информация.</span>
+                  <svg class="info-icon" width="2" height="12" viewBox="0 0 2 12" role="img" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"></path>
+                  </svg>
+                </button>
+                <!-- <p class="tooltip-text" role="tooltip">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </p> -->
+              </div>
+              <div class="input-form-container">
+                <button class="plus-minus-button minus-button" type="button">
+                  <span class="visually-hidden">Увеличить счетчик детей</span>
+                </button>
+                <input class="form-input-guest" type="number" value="2" max="99" min="0" name="search-hotels-form-children" id="search-hotels-form-children" required>
+                <button class="plus-minus-button plus-button" type="button">
+                  <span class="visually-hidden">Уменьшить счетчик детей</span>
+                </button>
+              </div>
+              </div>
+            </div>
+            <button class="button button-secondary button-large modal-button" type="submit">Найти</button>
+          </form>
+          </section>
+        </div>
+      </div>
+    </div>
    </div>
   </body>
 </html>
