@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div class="modal-container modal-container-closed">
+      <div class="modal">
+        <div class="modal-search">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none" aria-hidden="true" viewBox="0 0 15 14" role="img" focusable="false">
+              <path fill="currentcolor" d="M14.4 1.3 13 0 7.4 5.7 1.7 0 .4 1.3 6 7 .4 12.7 1.7 14l5.7-5.7L13 14l1.3-1.3L8.7 7l5.7-5.7Z"></path>
+            </svg>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title title-h2">Поиск гостиницы в Седоне</h2>
+          <form class="form modal-form" id="search-hotels-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-container">
+              <label class="modal-label-input-title label-size" for="search-hotels-form-arrival-date">Дата заезда:</label>
+              <div class="arrival-date-container">
+                <div class="calendar-wpapper">
+                  <input class="modal-label-input modal-input-large field" type="text" value="27 апреля 2020" name="search-hotels-form-arrival-date" id="search-hotels-form-arrival-date" placeholder="Укажите дату" required>
+                  <button class="calendar-button calendar-button-arrival" type="button">
+                    <span class="visually-hidden">Выбрать дату заезда в календаре</span>
+                  </button>
+                </div>
+                <p class="message message-error">Мы не можем отправить вас в прошлое.</p>
+              </div>
+            </div>
+            <div class="form-container">
+              <label class="modal-label-input-title label-size" for="search-hotels-form-departure-date">Дата выезда:</label>
+              <div class="departure-date-container">
+                <div class="calendar-wpapper">
+                  <input class="modal-label-input modal-input-large field" type="text" value="1 сентября 2023" name="search-hotels-form-departure-date" id="search-hotels-form-departure-date" placeholder="Укажите дату" required>
+                  <button class="calendar-button calendar-button-arrival" type="button">
+                    <span class="visually-hidden">Выбрать дату заезда в календаре</span>
+                  </button>
+                </div>
+                <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="adults-container">
+                <label class="modal-label-input-title label-size" for="search-hotels-form-adults">Взрослые:</label>
+                <div class="input-form-container">
+                  <button class="plus-minus-button minus-button" type="button">
+                    <span class="visually-hidden">Уменьшить счетчик взрослых людей</span>
+                  </button>
+                  <input class="form-input-guest" type="number" value="2" max="99" min="1" name="search-hotels-form-adults" id="search-hotels-form-adults" required>
+                  <button class="plus-minus-button plus-button" type="button">
+                    <span class="visually-hidden">Увеличить счетчик взрослых людей</span>
+                  </button>
+                </div>
+              </div>
+              <div class="children-container">
+                <div class="children-container-form">
+                  <label class="modal-label-input-title" for="search-hotels-form-children">
+                    <span>Дети:</span>
+                    <div class="tooltip">
+                      <button class="tooltip-toggle" type="button">
+                        <span class="visually-hidden">Подробная информация.</span>
+                        <svg class="info-icon" width="2" height="12" viewBox="0 0 2 12" role="img" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"></path>
+                        </svg>
+                      </button>
+                      <p class="tooltip-text" role="tooltip">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                        размещаются бесплатно.
+                      </p>
+                    </div>
+                  </label>
+                <div class="input-form-container">
+                  <button class="plus-minus-button minus-button" type="button">
+                    <span class="visually-hidden">Уменьшить счетчик детей</span>
+                  </button>
+                  <input class="form-input-guest" type="number" value="2" max="99" min="0" name="search-hotels-form-children" id="search-hotels-form-children" required>
+                  <button class="plus-minus-button plus-button" type="button">
+                    <span class="visually-hidden">Увеличить счетчик детей</span>
+                  </button>
+                </div>
+              </div>
+             </div>
+            </div>
+            <button class="button button-secondary button-large modal-button" type="submit">Найти</button>
+          </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
