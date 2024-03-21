@@ -64,7 +64,6 @@ body {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -204,7 +203,7 @@ img {
 }
 
 .logo {
-  display: block;
+  vertical-align: middle;
   z-index: 0;
   margin-right: 29px;
   margin-bottom: -6px;
@@ -343,6 +342,7 @@ img {
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-color: #9db9cc;
+  margin-top: -4px;
   padding: 51px 371px 82px;
   color: #ffffff;
 }
@@ -1065,6 +1065,8 @@ img {
 }
 
 .sorting-container {
+  vertical-align: middle;
+  margin-top: -4px;
   margin-bottom: 50px;
   background-image: url("../images/catalog-background.jpg");
   background-size: cover;
@@ -1492,6 +1494,10 @@ img {
   grid-column: 1/-1;
   color: #000000;
   text-decoration: none;
+}
+
+.product-card-image {
+  display: block;
 }
 
 .product-card-text {
