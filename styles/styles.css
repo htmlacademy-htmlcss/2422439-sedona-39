@@ -29,7 +29,7 @@ body {
   margin: 0;
   background-color: #f2f2f2;
   height: 100%;
-  color: #333333;
+  color: #000000;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -54,7 +54,7 @@ body {
   margin: 0 auto;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  max-width: 1200px;
+  width: 1200px;
   min-height: 100%;
 }
 
@@ -174,6 +174,7 @@ img {
 
 .search-hotels-button {
   min-width: 376px;
+  max-width: 600px;
 }
 
 .button-icon {
@@ -206,7 +207,7 @@ img {
   vertical-align: middle;
   z-index: 0;
   margin-right: 29px;
-  margin-bottom: -6px;
+  margin-bottom: -10px;
 }
 
 .logo:hover {
@@ -317,8 +318,9 @@ img {
 .header-button {
   margin-left: 21px;
   padding: 8px 15px;
-  width: 160px;
-  height: 36px;
+  min-width: 160px;
+  max-width: 300px;
+  min-height: 36px;
 }
 
 .main-container {
@@ -342,7 +344,6 @@ img {
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-color: #9db9cc;
-  margin-top: -4px;
   padding: 51px 371px 82px;
   color: #ffffff;
 }
@@ -379,6 +380,7 @@ img {
 
 .advantages-text {
   margin: 0;
+  color: #333333;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -441,6 +443,7 @@ img {
 
 .advantages-card-description {
   margin: 0;
+  color: #333333;
 }
 
 .advantages-revers {
@@ -481,6 +484,7 @@ img {
 
 .infrastructure-lead-text {
   margin: 0;
+  color: #333333;
   font-size: 22px;
   line-height: 26px;
 }
@@ -532,6 +536,7 @@ img {
 
 .infrastructure-item p {
   margin: 0;
+  color: #333333;
 }
 
 /* search */
@@ -541,9 +546,14 @@ img {
   text-align: center;
 }
 
+/* .search-text {
+  color: #333333;
+} */
+
 .search-text,
 .subscribe-text {
   margin: 0 0 55px;
+  color: #333333;
   font-size: 22px;
   line-height: 26px;
 }
@@ -552,7 +562,7 @@ img {
 
 .subscribe {
   padding-top: 96px;
-  padding-bottom: 105px;
+  padding-bottom: 104px;
   text-align: center;
 }
 
@@ -587,12 +597,16 @@ img {
   color: inherit;
 }
 
+.subscribe-index .subscribe-text {
+  color: inherit;
+}
+
 .field {
   border: none;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
   padding: 12px 20px;
-  color: #000000;
+  color: inherit;
   font-size: inherit;
   line-height: 24px;
   font-family: inherit;
@@ -621,7 +635,6 @@ img {
   background-color: #ffffff;
   padding-top: 38px;
   padding-bottom: 30px;
-  color: #000000;
 }
 
 .footer-container {
@@ -1066,7 +1079,6 @@ img {
 
 .sorting-container {
   vertical-align: middle;
-  margin-top: -4px;
   margin-bottom: 50px;
   background-image: url("../images/catalog-background.jpg");
   background-size: cover;
@@ -1086,6 +1098,7 @@ img {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   gap: 28px;
   margin: 0 0 40px;
   padding: 0;
@@ -1129,6 +1142,7 @@ img {
 
 .filter {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
 
@@ -1244,7 +1258,6 @@ img {
 }
 
 .button.filter-button {
-  display: block;
   min-width: 191px;
 }
 
@@ -1404,7 +1417,6 @@ img {
 
 .catalog-title {
   margin: 0;
-  color: inherit;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1417,7 +1429,10 @@ img {
 
 .catalog-icons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
   gap: 8px;
+  max-width: 280px;
 }
 
 .select-control {
@@ -1439,6 +1454,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   font-family: inherit;
+  align-self: center;
 }
 
 .select-control:hover {
@@ -1492,7 +1508,7 @@ img {
 
 .product-card-link {
   grid-column: 1/-1;
-  color: #000000;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -1502,12 +1518,14 @@ img {
 
 .product-card-text {
   margin: 0;
+  color: #333333;
   font-size: inherit;
   line-height: inherit;
 }
 
 .product-card-price {
   margin: 0;
+  color: #333333;
   font-size: inherit;
   line-height: inherit;
   text-align: right;
@@ -1550,7 +1568,7 @@ img {
   background-color: #f2f2f2;
   padding: 8px 15px;
   min-height: 36px;
-  color: inherit;
+  color: #333333;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1611,10 +1629,10 @@ img {
 .pagination-link.pagination-current {
   margin: 0;
   background-color: #f2f2f2;
-  color: #000000;
+  color: inherit;
 }
 
 .pagination-link.pagination-prev {
   background-color: #ffffff;
-  color: #000000;
+  color: inherit;
 }
